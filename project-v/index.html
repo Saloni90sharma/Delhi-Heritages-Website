@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredible India - States & Union Territories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>🇮🇳 Incredible India</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#explore" class="nav-link">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#search" class="nav-link">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Delhi</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide active">
+                    <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&h=600&fit=crop" alt="Taj Mahal - India's Heritage">
+                    <div class="carousel-content">
+                        <h1>Discover Incredible India</h1>
+                        <p>Explore the rich heritage, vibrant culture, and delicious cuisine of India's 29 States and Union Territories</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=1200&h=600&fit=crop" alt="Kerala Backwaters">
+                    <div class="carousel-content">
+                        <h1>Cultural Diversity</h1>
+                        <p>From the backwaters of Kerala to the deserts of Rajasthan, experience India's diverse landscapes</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=600&fit=crop" alt="Indian Palace Architecture">
+                    <div class="carousel-content">
+                        <h1>Architectural Marvels</h1>
+                        <p>Witness the grandeur of ancient palaces, forts, and monuments that tell India's story</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="image.png" alt="Indian Festival">
+                    <div class="carousel-content">
+                        <h1>Festivals & Traditions</h1>
+                        <p>Celebrate the colors and joy of Indian festivals throughout the year</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=1200&h=600&fit=crop" alt="Indian Cuisine">
+                    <div class="carousel-content">
+                        <h1>Culinary Journey</h1>
+                        <p>Savor the authentic flavors and spices that make Indian cuisine world-famous</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search" class="search-section">
+        <div class="container">
+            <h2>Search States & Union Territories</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search by state or union territory name..." />
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section id="explore" class="explore-section">
+        <div class="container">
+            <h2>Explore India's States & Union Territories</h2>
+            <div id="statesGrid" class="states-grid">
+                <!-- States will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Incredible India. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
